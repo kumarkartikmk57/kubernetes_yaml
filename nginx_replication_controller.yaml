@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: apiVersion: v1
+kind: ReplicationController
+metadata:
+ name: repu
+ labels:
+  app: myapp
+  tier: frontend
+spec:
+ template:
+  metadata:
+   name: repu
+  spec:
+    containers:
+    - name: nginx
+      image: nginx
+      
+ replicas: 3
